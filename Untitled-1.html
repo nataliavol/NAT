@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Работа 3.1</title>
+<style>
+body{
+	background: url(1.jpg) 100% 100% no-repeat;
+	background-size: cover;
+}
+
+h2{
+	color: #191970;
+	text-align: center;
+}
+
+hr {
+	height: 10px; 
+	width: 70%;
+	background-color: #D8BFD8;
+	box-shadow: 3px 3px 7px #8B008B;
+}
+
+
+table{
+	width: 70%;
+	border: 3px; 
+	cellspacing: 10;
+	bordercolor:#FFFFFF;
+	align: center;
+	margin: auto;
+}
+
+th {
+	background:#483D8B;
+	height: 30px;
+}
+
+#fon {
+	background: linear-gradient(180deg, #483D8B, #D8BFD8);
+}
+
+#center {
+	text-align:center;
+	background: #D8BFD8;
+}
+
+#footer {
+    position: fixed; 
+    left: 0; bottom: 0;
+    padding: 10px; 
+    background: #483D8B; 
+    color: #fff; 
+    width: 100%;
+}
+
+</style>
+ 
+</head>
+
+<body>
+	<script>
+      let d = new Date();
+      document.body.innerHTML = "<h1>Today’s date is " + d + "</h1>"
+	</script>
+	<h2> Тестовая страница HTML 
+	<hr>
+	<p><b> Я изучаю язык HTML </b></p>
+	<p><i> Добавим теги, видео и аудио </i></p>
+	</h2>
+	 
+	<p>	Отгадайте загадку: Где вторник идёт раньше, чем понедельник?
+	<div id="demo" style="border:1px solid black; display:none;">В словаре. </div>
+	<button id="demo1" 
+	onclick="document.getElementById('demo').style.display='none'; 
+	document.getElementById('demo1').style.display='none'; 
+	document.getElementById('demo2').style.display='block';
+	"style="display:none;">Скрыть</button>
+
+	<button id="demo2" 
+	onclick=" document.getElementById('demo').style.display='block'; 
+	document.getElementById('demo2').style.display='none'; 
+	document.getElementById('demo1').style.display='block';">Ответ</button>	
+		
+	<table>
+				
+		<tr>
+			<th> </th> 
+			<th> </th>
+			<th> </th> 
+		</tr>	
+	
+		<tr> 
+			<td rowspan=2> 
+				<ol>
+				<p> <h3>Рассписание занятий </h3></p>
+					<li>Введение вразработку веб-приложений</li> 
+					<li>Клиентская часть веб-приложений</li> 
+					<li>Знакомство с языком программирования JаvaScript (JS)</li>
+					<li>Знакомство с системами контроля версий</li>
+					<li>Знакомство с работой в ОС Linux и введение в язык программирования РНР</li>
+					<li>Веб-приложения, работа с ними и с СУБД</li>
+				</ol>
+			</td> 
+			<td id=fon> <font color="#E6E6FA" size="+2"> <ins>HTML</ins> — язык разметки, который используется в большинстве веб-страниц. Браузер интерпретирует его значения (теги) и отображает текст и элементы так, как их представляли разработчики. Без стандартизированного языка страницы сайта превращались бы в мешанину из букв, картинок и форм, которой невозможно нормально пользоваться. </font></td> 
+			<td rowspan="2"> 
+				Использованные теги: 
+				<ul>
+					<li>html</li>
+					<li>head</li>
+					<li>meta</li>
+					<li>title</li>
+					<li>head</li>
+					<li>body</li>
+					<li>h1</li>
+					<li>h2</li>
+					<li>h2</li>
+					<li>hr</li>
+					<li>b</li>
+					<li>p</li>
+					<li>i</li>
+					<li>div</li>
+					<li>font</li>
+					<li>ins</li>
+					<li>table</li>
+					<li>th</li>
+					<li>td</li>
+					<li>ol</li>
+					<li>ul</li>
+					<li>li</li>
+					<li>audio</li>
+					<li>video</li>
+					<li>source</li>
+					<li>a</li>
+				</ul>
+				
+			</td> 
+		</tr>
+		
+		<tr>
+			<td id=center> 
+				
+			<audio controls>
+    		    <source src="звук.mp3" type="audio/mpeg">
+    		    <a href="звук.mp3">Скачайте музыку</a>.
+ 			</audio>
+		<br> 
+			<video height="250" controls="controls">
+  				<source src="видео.mp4" type="video/mp4"; codecs="avc1.42E01E, mp4a.40.2">
+   				<a href="видео.mp4">Скачайте видео</a>.
+ 			 </video>
+			</td> 
+						
+		</tr>
+		
+				
+	</table>
+	
+	 <div id="footer"> &copy; Наталия Гуляева </div>
+		
+</body>
+</html>
